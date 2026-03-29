@@ -1,4 +1,4 @@
-class Opal < Formula
+class OpalCli < Formula
   desc "Terminal-first local GitLab pipeline runner with AI-assisted debugging"
   homepage "https://opal.cloudflavor.io"
   version "0.1.0-rc6"
@@ -24,6 +24,8 @@ class Opal < Formula
     regex(/^v?(\d+(?:\.\d+)+(?:-rc\d+)?)$/i)
     strategy :github_releases
   end
+
+  conflicts_with "opal", because: "both install an `opal` executable"
 
   def install
     bin.install "opal"
