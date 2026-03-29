@@ -41,15 +41,16 @@ opal --version
    shasum -a 256 opal-<version>-<target>.tar.gz
    ```
 
-4. Update `Formula/opal.rb` with:
+4. Update `Formula/opal-cli.rb` with:
    - the new `version`
    - the matching `url` values
    - the matching `sha256` values
+   - any formula metadata that changed
 5. Validate the formula:
 
    ```bash
-   brew style Formula/opal.rb
-   ruby -c Formula/opal.rb
+   brew style Formula/opal-cli.rb
+   ruby -c Formula/opal-cli.rb
    ```
 
 6. Commit and push the change to the default branch of `cloudflavor/homebrew-tap`.
@@ -57,11 +58,11 @@ opal --version
 
    ```bash
    brew update
-   brew livecheck cloudflavor/tap/opal
-   brew upgrade cloudflavor/tap/opal
+   brew livecheck cloudflavor/tap/opal-cli
+   brew upgrade cloudflavor/tap/opal-cli
    ```
 
 Notes:
 
-- `livecheck` is already configured in `Formula/opal.rb` to track both stable tags and `-rcN` tags.
-- If upstream asset names change or a platform is added or removed, update the corresponding `url` and `sha256` entries in `Formula/opal.rb`.
+- `livecheck` is already configured in `Formula/opal-cli.rb` to track both stable tags and `-rcN` tags.
+- If upstream asset names change or a platform is added or removed, update the corresponding `url` and `sha256` entries in `Formula/opal-cli.rb`.
