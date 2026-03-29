@@ -30,7 +30,7 @@ opal --version
 
 ## How to Release
 
-1. Publish the new Opal release on GitHub first.
+1. Publish the new Opal release on GitHub.
 2. Make sure the release includes all supported tarballs:
    - macOS `arm64`
    - Linux `arm64`
