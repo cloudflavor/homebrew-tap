@@ -4,16 +4,22 @@ This is the official Cloudflavor Homebrew tap.
 
 ## Opal
 
-Install the tap:
+The Homebrew formula name is `opal-cli`.
+The installed executable is still:
+
+```bash
+opal
+```
+
+The formula is named `opal-cli` because `opal` already exists in `homebrew/core` for the Ruby-to-JavaScript transpiler.
+
+If you already have Homebrew core's `opal` installed, uninstall it first because both formulae install an `opal` executable.
+
+Install the tap and formula:
 
 ```bash
 brew tap cloudflavor/tap
-```
-
-Install Opal:
-
-```bash
-brew install cloudflavor/tap/opal
+brew install cloudflavor/tap/opal-cli
 ```
 
 Check the installed version:
