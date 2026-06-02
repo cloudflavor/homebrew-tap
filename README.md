@@ -28,6 +28,30 @@ Check the installed version:
 opal --version
 ```
 
+## Parley
+
+The Homebrew formula name is `parley-cli`.
+The installed executable is still:
+
+```bash
+parley
+```
+
+Parley does not have any extra dependencies beyond the Rust toolchain (which is handled by Homebrew during installation).
+
+Install the tap and formula:
+
+```bash
+brew tap cloudflavor/tap
+brew install cloudflavor/tap/parley-cli
+```
+
+Check the installed version:
+
+```bash
+parley --version
+```
+
 ## How to Release
 
 1. Publish the new Opal release on GitHub.
