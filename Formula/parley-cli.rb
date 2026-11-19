@@ -1,6 +1,6 @@
 class ParleyCli < Formula
   desc "Terminal-first review tool for Git diffs with AI-assisted discussion"
-  homepage "https://github.com/cloudflavor/parley"
+  homepage "https://cloudflavor.io/parley/"
   version "0.3.1"
   license "Apache-2.0"
 
