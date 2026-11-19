@@ -1,6 +1,6 @@
 class OpalCli < Formula
   desc "Terminal-first local GitLab pipeline runner with AI-assisted debugging"
-  homepage "https://opal.cloudflavor.io"
+  homepage "https://cloudflavor.io/opal/"
   version "0.1.0-rc6"
   license "Apache-2.0"
 
